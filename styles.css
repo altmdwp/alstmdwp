@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  --bg: #060b16;
+  --panel: #0f1a2b;
+  --text: #dbe8ff;
+  --accent: #51f5ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 20% 20%, #16243f 0%, var(--bg) 55%, #02050d 100%);
+  color: var(--text);
+  font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.layout {
+  width: min(1024px, 95vw);
+  text-align: center;
+  padding: 1.2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.4rem);
+  color: #f1f6ff;
+}
+
+.subtitle {
+  margin: 0.45rem 0 1.1rem;
+  color: #a8bfeb;
+}
+
+canvas {
+  width: 100%;
+  max-width: 980px;
+  border-radius: 18px;
+  background: linear-gradient(160deg, rgba(11, 21, 40, 0.92), rgba(4, 10, 22, 0.96));
+  border: 1px solid rgba(117, 172, 255, 0.2);
+  box-shadow: 0 0 0 1px rgba(81, 245, 255, 0.08), 0 22px 45px rgba(0, 0, 0, 0.55);
+}
